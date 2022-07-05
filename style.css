@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,
+body {
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+
+
+body{
+    margin: 0px;
+}
+    *,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+.wrapper {    
+    width: 100%;
+    height: 100%;
+}
+/*INTRO*/
+.intro{
+    height: 100%;
+    width: 100%;
+    position:relative;
+    margin: 0;
+    bottom: 0;
+    
+}
+.intro__title{
+    font-family: 'Arizonia', cursive;
+    color: #F4DC7A;
+    z-index: 1000;
+    position: relative;
+}
+
+.intro__image{
+    height: 100%;
+    z-index: 1;
+}
+
+.intro__photo{
+    filter: brightness(40%);
+    position:relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+}
+
+.header{
+    position: absolute;
+    font-family: 'Arizonia', cursive;
+    font-size: 100px;
+    top:1%;
+    color: #F4DC7A;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.header.absolute {
+    position: fixed;
+    font-size: 16px;
+}
+
+
+
+
+
+
+.nav{
+/*    width: 50%;*/
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    font-size: 14px;
+}
+
+.nav__link{
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 6px;
+    color:#fff;
+    margin-left: 10px;
+    font-family: 'Arizona';
+    
+    
+}
+
+.nav__link:hover{
+    text-decoration: underline;
+    transition: .3s linear;
+    color: #F4DC7A
+    
+}
+
+
+/*WORKS______________________________________________________________________________________*/
+
+.works__banner{
+    
+    padding: 150px;
+    font-family: 'Arizonia', cursive;
+    font-size: 80px;
+    background: #000;
+    text-align: center;
+    color: #F4DC7A;    
+    z-index: 1;
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.oil {
+    height: 100%;
+    background-color: #000;
+    
+}
+
+.works__item{
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #000;
+}
+
+.works__photo{
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-radius: 2px;
+    margin: 10px;        
+    
+}
+
+
+
+.endless {
+    padding: 50px;
+    font-family: 'Arizonia', cursive;
+    font-size: 80px;
+    background: #000;
+    text-align: center;
+    color: #F4DC7A;
+    border-bottom: 50px solid #000;
+    
+    z-index: 1;
+}
+
+
+.endless__banner{
+    text-decoration: underline;
+
+}
+
+.endless__item {
+    font-size: 50px;
+
+}
+
+
+
+.contacts__link {
+    color: #F4DC7A;
+    font-size: 45px;
+    margin: 0 20px;
+}
+.contacts__link:hover{
+    text-decoration: underline;
+    color: #f7c70a;;
+    transition: .3s linear;
+}
+
+.footer{
+    border-top: 30px;
+    background: #000;
+    height: 30px;
+}
+
+
+/*MEDIA______________________________________________________________________________________*/
+
+@media (max-width:991px){
+    .burger{
+        display: block;
+        border: 0;
+        background: none;
+    }
+
+    .burger__item{
+        display: block;
+    }
+    .nav{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: 15%;
+        text-align: right;
+        flex-direction: column;
+        background: #000;
+        opacity: .5; 
+              
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+
+    .nav__link{
+         padding: 20px 15px;
+         opacity: 1;
+    }    
+}
+
